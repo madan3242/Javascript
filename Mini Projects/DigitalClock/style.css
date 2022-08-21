@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2B4865;
+}
+.clock{
+    width: 500px;
+    height: 200px;
+    padding: 50px 0;
+    border-radius: 15px;
+    font-size: 3em;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #256D85;
+    color: #8FE3CF;
+}
