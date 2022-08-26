@@ -134,3 +134,15 @@ console.log(a2.every(isNumber));
 //some(callback[, thisObject]) returns true if callback returns true for at least one item in the array.
 
 console.log(a2.some(isNumber));
+
+
+// reduce()
+
+var a = [10, 20, 20, 10];
+const total = a.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+console.log(total); // Prints 60
+
+// reduceRight()
+
+var tot = a.reduceRight((accumulator, currentValue) => accumulator + currentValue, 0);
+console.log(tot);
