@@ -19,8 +19,6 @@
 
 var isEven = (element) => element % 2 == 0;
 
-console.log(isEven(3));
-
 //Callback function
 
 var result = [2, 4, 6].every(isEven);
