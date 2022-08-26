@@ -29,7 +29,6 @@ var user = {
 
 var courseList = true;
 
-
 user.buyCourse("Frontend course");
 console.log(user.getCourseCount());
 user.buyCourse("React course");
