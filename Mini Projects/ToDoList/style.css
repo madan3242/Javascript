@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     display: flex;
@@ -10,11 +11,29 @@ body{
 }
 .container{
     padding: 20px;
+
+}
+.container h1{
+    font-size: 2.5em;
+
+}
+.todo-container{
+    width: 100%;
 }
 #inputTodo{
-    padding: 2%;
+    padding: 3%;
+    width: 250px;
+    font-size: 1em;
+}
+#addTodo{
+    padding: 3%;
+    font-size: 1em;
+    width: 80px;
 }
 ul li{
-    padding: 2%;
+    padding: 3%;
     list-style: none;
+    font-size: 1.2em;
+    width: 250px;
+
 }

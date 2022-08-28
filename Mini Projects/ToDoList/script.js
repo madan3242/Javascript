@@ -11,17 +11,16 @@ function insertTodo(){
 
     console.log(todo);
 
-    inputTodo.value = "";
-
     showTodo();
-
+    
 }
 
 function showTodo(){
+    inputTodo.value = "";
+
+    displayTodo.innerHTML = "";
     
     for (let i = 0; i < todo.length; i++) {
-        displayTodo.innerHTML += `<li>
-                                    ${todo[i]}
-                                </li>`
+        displayTodo.innerHTML += `<li>${todo[i]}</li>`
     }
 }
