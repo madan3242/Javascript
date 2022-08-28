@@ -19,6 +19,7 @@ body{
 }
 .todo-container{
     width: 100%;
+    margin : 2% 0;
 }
 #inputTodo{
     padding: 3%;
@@ -35,5 +36,11 @@ ul li{
     list-style: none;
     font-size: 1.2em;
     width: 250px;
+}
 
+#clearAll{
+    margin : 2% 0;
+    padding: 3%;
+    font-size: 1em;
+    width: 100%;
 }
