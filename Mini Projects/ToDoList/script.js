@@ -5,8 +5,7 @@ const addTodo = document.getElementById('addTodo');
 const displayTodo = document.getElementById('displayTodo');
 const clearAll = document.getElementById('clearAll');
 
-
-function insertTodo(){
+let insertTodo = () => {
     var todoItem = inputTodo.value;
 
     todo.push(todoItem);
@@ -16,7 +15,7 @@ function insertTodo(){
     showTodo();
 }
 
-function showTodo(){
+let showTodo = () => {
     inputTodo.value = "";
 
     displayTodo.innerHTML = "";
@@ -26,7 +25,7 @@ function showTodo(){
     }
 }
 
-function clearElements(){
+let clearElements = () => {
     todo.length = 0;
 
     displayTodo.innerHTML = "";
