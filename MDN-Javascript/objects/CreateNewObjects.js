@@ -75,4 +75,8 @@ const Animal = {
   const fish = Object.create(Animal);
   fish.type = 'Fishes';
   fish.displayType(); // Output: Fishes
-  
+
+// Defining properties for an object type
+Car.prototype.color = null;
+
+car1.color = 'black';
