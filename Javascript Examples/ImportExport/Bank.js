@@ -12,12 +12,12 @@ class Address{
 }
 
 class SvaingsAccount{
-    constructor(accNo, accName, amount, Address){
+    constructor(accNo, accName, amount, address){
         console.log("Savings class constructor");
         this.accNo = accNo;
         this.accName = accName;
         this.amount = amount;
-        this.address = Address;
+        this.address = address;
     }
 }
 
@@ -25,4 +25,5 @@ let c1 = new SvaingsAccount(1021, "Account 1", 10000, new Address("123", "Marath
 
 console.log(c1);
 
-export default Address
+// export default Address
+module.exports = Address;
