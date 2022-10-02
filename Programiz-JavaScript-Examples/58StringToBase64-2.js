@@ -2,7 +2,7 @@
 
 const Base64 = {
     _keyStr : "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",
-    
+
     encode : function(input){
         let output = "";
         let chr1, chr2, chr3, enc1, enc2, enc3, enc4;
@@ -12,9 +12,9 @@ const Base64 = {
 
         while(i < input.length){
 
-            chr1 = input.chatCodeAt(i++);
-            chr2 = input.chatCodeAt(i++);
-            chr3 = input.chatCodeAt(i++);
+            chr1 = input.charCodeAt(i++);
+            chr2 = input.charCodeAt(i++);
+            chr3 = input.charCodeAt(i++);
 
             enc1 = chr1 >> 2;
             enc2 = ((chr1 & 3) << 4) | (chr2 >> 4);
@@ -111,8 +111,8 @@ const Base64 = {
                 i +=2;
             }
             else{
-                c2 = utftext.chatCodeAt(i+1);
-                c3 = utftext.chatCodeAt(i+2);
+                c2 = utftext.charCodeAt(i+1);
+                c3 = utftext.charCodeAt(i+2);
                 string += String.fromCharCode(((c & 15) << 12) | ((c2 & 63) << 6) | (c3 & 63));
                 i += 3;
             }
