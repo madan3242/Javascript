@@ -1,10 +1,11 @@
 const panels = document.querySelectorAll('.panel');
 
 function toggleOpen() {
-    this.classList.toggle("open");
+    this.classList.toggle('open');
 }
 
 function toggleActive(e) {
+    console.log(e.propertyName);
     if(e.propertyName.includes('flex-grow')){
         this.classList.toggle('open-active');
     }
